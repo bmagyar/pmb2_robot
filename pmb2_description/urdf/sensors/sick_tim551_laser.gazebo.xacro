@@ -11,7 +11,7 @@
   Laser configuration according with the SICK TiM 551 product specification:
   http://www.sick.com/group/DE/home/pr/events/robot_day/Documents/TIM551-2050001_en.pdf
 -->
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:macro name="sick_tim551_laser_gazebo" params="name ros_topic update_rate min_angle max_angle">
     <gazebo reference="${name}_link">

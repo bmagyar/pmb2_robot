@@ -8,7 +8,7 @@
   To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to
   Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 -->
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- Caster transmissions -->
   <xacro:macro name="caster_transmission" params="name side number reduction" >
@@ -18,7 +18,7 @@
         <mechanicalReduction>${reduction}</mechanicalReduction>
       </actuator>
       <joint name="${name}_${side}_${number}_joint" >
-        <hardwareInterface>hardware_interface/JointStateInterface</hardwareInterface>
+        <hardwareInterface>JointStateInterface</hardwareInterface>
       </joint>
     </transmission>
   </xacro:macro>

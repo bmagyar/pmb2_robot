@@ -11,7 +11,7 @@
   Laser configuration according with the Hokuyo URG-04LX-UG01 product specification:
   http://www.hokuyo-aut.jp/02sensor/07scanner/download/products/urg-04lx-ug01/data/URG-04LX_UG01_spec_en.pdf
 -->
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:macro name="hokuyo_urg_04lx_ug01_laser_gazebo" params="name ros_topic update_rate min_angle max_angle">
     <gazebo reference="${name}_link">

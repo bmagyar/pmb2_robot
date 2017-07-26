@@ -8,7 +8,7 @@
   To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to
   Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 -->
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- Wheel transmission -->
   <xacro:macro name="wheel_transmission" params="side">
@@ -18,7 +18,7 @@
         <mechanicalReduction>1.0</mechanicalReduction>
       </actuator>
       <joint name="wheel_${side}_joint" >
-        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
   </xacro:macro>
